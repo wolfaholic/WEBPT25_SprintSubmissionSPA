@@ -3,9 +3,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import "./index.css";
-import "./Form.js"
+import "./components/Form.js"
 import { Form } from "reactstrap";
-import OrderForm from "./Form.js";
+import OrderForm from "./components/Form.js";
 
 
 //Styling //
@@ -152,8 +152,8 @@ export default function App() {
                      <div className="Logo"> 
                         <HeroText>Your favorite food while coding</HeroText>
                          
-                        <PizzaButton type="button" exact to="/pizza" onclick={OrderForm}>
-                          Want Pizza?
+                        <PizzaButton exact to="/pizza" onclick={OrderForm}>
+                          Want Pizza? I want Pizza!
                         </PizzaButton> 
                       
                     </div>
