@@ -1,9 +1,12 @@
 // Imports //
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import "./index.css";
+import "./Form.js"
+import { Form } from "reactstrap";
 import OrderForm from "./Form.js";
+
 
 //Styling //
 // Primary Div//
@@ -42,14 +45,14 @@ const NavHeader = styled.h1`
     box-shadow: 5px 5px 5px rgba(43, 4, 2, .5);
 `;
 
-const NavLinks = styled.div`
-    align-self: center;
-    display: flex;
-    font-weight: bold;
-    font-family: Lato, sans-serif;
-    `;
+// const NavLinks = styled.div`
+//     align-self: center;
+//     display: flex;
+//     font-weight: bold;
+//     font-family: Lato, sans-serif;
+//     `;
 
-const ButtonLinks = styled(Link)`
+const ButtonLinks = styled(NavLink)`
     background-color: red;
     color: white;
     text-decoration: none;
@@ -141,16 +144,18 @@ export default function App() {
        <MainDiv>
             <NavDiv>
                 <NavHeader>Lambda Eats</NavHeader>
-                <NavLinks>
-                <ButtonLinks to="/">Home</ButtonLinks>
-                <ButtonLinks to="help">Help</ButtonLinks>
-                </NavLinks>
+                <ButtonLinks exact to="/">Home</ButtonLinks>
+                <ButtonLinks exact to="/help">Help</ButtonLinks> 
             </NavDiv>
 
             <HeroDiv>
                      <div className="Logo"> 
                         <HeroText>Your favorite food while coding</HeroText>
-                        <PizzaButton to={OrderForm}>Want Pizza?</PizzaButton>
+                         
+                        <PizzaButton type="button" exact to="/pizza" onclick={OrderForm}>
+                          Want Pizza?
+                        </PizzaButton> 
+                      
                     </div>
                     
             </HeroDiv>
@@ -195,7 +200,7 @@ export default function App() {
             </BottomCards>
 
             <Footer>
-                <p>Copyright 2020 - WebPT23</p>
+                <p>Copyright 2021 - WebPT25</p>
             </Footer>
           
         </MainDiv>
