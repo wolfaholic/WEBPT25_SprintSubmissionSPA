@@ -5,8 +5,8 @@ import { NavLink } from 'react-router-dom';
 
 // Primary Div//
 export const MainDiv = styled.div`
-    display: block;
     flex-flow: column nowrap;
+    justifiy-content: center;
     margin: 0px;
     padding: 0px;
     background: rgb(255,0,0);

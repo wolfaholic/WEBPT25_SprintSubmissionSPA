@@ -68,7 +68,7 @@ export default function App() {
             </BottomCards>
         </Route>
         <Route path='/pizza'>
-          <OrderForm />
+          <OrderForm /> 
         </Route>
         
         <Footer>

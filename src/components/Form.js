@@ -1,10 +1,12 @@
 import React from 'react';
 import {Col, Button, Form, FormGroup, Label, Input } from 'reactstrap';
+ 
 
 const OrderForm = () => {
-    return(
+    return(  
 <>
-<Form>
+ 
+ <Form>
       <FormGroup row>
         <Label for="Name Input" sm={2}>Name</Label>
         <Col sm={10}>
@@ -61,11 +63,12 @@ const OrderForm = () => {
         </Col>
       </FormGroup>
     </Form>
-
+   
      
-</>
+</> 
+
     );
 
 }
-
+ 
 export default OrderForm;
