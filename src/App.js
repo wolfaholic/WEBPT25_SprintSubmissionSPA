@@ -6,6 +6,8 @@ import OrderForm from "./components/Form.js"
 import { Route } from "react-router-dom";
 import "./components/Form"
 
+{/* I have had some major issues getting Cypress to run. It has now broken this file. I cant render anything to get it to compile and now I cannot complete this. My instructor is on vacation and I dont know what else to do. I do not have enough time to start over*/}
+
 
 // App
 export default function App() {
